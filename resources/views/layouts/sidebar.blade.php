@@ -66,7 +66,7 @@
                     </a>
                     <ul class="treeview-menu">
                         <li><a href="{{ route('kategori.index') }}"><i class="fa fa-circle-o"></i> Kategori</a></li>
-                        <li><a href="#"><i class="fa fa-circle-o"></i> Produk</a></li>
+                        <li><a href="{{ route('produk.index') }}"><i class="fa fa-circle-o"></i> Produk</a></li>
                     </ul>
                 </li>
 

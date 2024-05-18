@@ -51,14 +51,19 @@
             table =  $('.table').DataTable({
                 processing: true,
                 autoWidth: false,
-                // ajax: {
-                //     url: '{{ route('kategori.data') }}',
-                // }
-            })
+                ajax: {
+                 url: '{{ route('kategori.data') }}',
+                 },
+                 columns: [
+                    {data: 'DT_RowIndex', searchable: false, sortable: false},
+                    {data: 'nama_kategori'},
+                    {data: 'aksi', searchable: false, sortable:false},
+                 ]
+            });
             $('#modal-form').validator().on('submit', function (e){
                 if(! e.preventDefault()){
                     $.ajax({
-                        url: $('#modal-form form').attr(action),
+                        url: $('#modal-form form').attr('action'),
                         type: 'post',
                         data: $('#modal-form form').serialize()
                     })
