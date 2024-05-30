@@ -52,7 +52,6 @@
                 processing: true,
                 autoWidth: false,
                 ajax: {
-<<<<<<< HEAD
                     url: '{{ route('kategori.data') }}',
                 },
                 columns:[
