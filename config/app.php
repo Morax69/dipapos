@@ -187,6 +187,11 @@ return [
     'aliases' => Facade::defaultAliases()->merge([
         // 'Example' => App\Facades\Example::class,
         'DataTables' => Yajra\DataTables\Facades\DataTables::class,
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 716ba28dab9921f603509009bb3e50ac8e4584d2
     ])->toArray(),
 
 ];

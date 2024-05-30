@@ -16,7 +16,11 @@
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8",
         "livewire/livewire": "^3.0",
+<<<<<<< HEAD
         "yajra/laravel-datatables-oracle": "^10.11"
+=======
+        "yajra/laravel-datatables-oracle": "10.10"
+>>>>>>> 716ba28dab9921f603509009bb3e50ac8e4584d2
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",

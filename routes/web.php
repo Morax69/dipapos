@@ -2,11 +2,14 @@
 
 use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\ProdukController;
+<<<<<<< HEAD
 use App\Http\Controllers\MemberController;
 use App\Http\Controllers\PembelianController;
 use App\Http\Controllers\PembelianDetailController;
 use App\Http\Controllers\PengeluaranController;
 use App\Http\Controllers\SupplierController;
+=======
+>>>>>>> 716ba28dab9921f603509009bb3e50ac8e4584d2
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -37,6 +40,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('/kategori', KategoriController::class);
 
     Route::get('/produk/data', [ProdukController::class, 'data'])->name('produk.data');
+<<<<<<< HEAD
     Route::post('/produk/delete-selected', [ProdukController::class, 'deleteSelected'])->name('produk.delete_selected');
     Route::resource('/produk', ProdukController::class);
 
@@ -58,4 +62,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/pembelian_detail/loadform/{diskon}/{total}', [PembelianDetailController::class, 'loadForm'])->name('pembelian_detail.load_form');
     Route::resource('/pembelian_detail', PembelianDetailController::class)
         ->except('create', 'show', 'edit');
+=======
+    Route::resource('/produk', ProdukController::class);
+>>>>>>> 716ba28dab9921f603509009bb3e50ac8e4584d2
 });

@@ -49,7 +49,13 @@ function tanggal_indonesia($tgl, $tampil_hari = true){
     return $text;
 }
 
+<<<<<<< HEAD
 function tambah_nol_didepan($value, $threshold = null)
 {
     return sprintf("%0". $threshold . "s", $value);
+=======
+function tambah_nol_didepan($value, $thresold = null)
+{
+    return sprintf("%0". $thresold . "s", $value);
+>>>>>>> 716ba28dab9921f603509009bb3e50ac8e4584d2
 }
