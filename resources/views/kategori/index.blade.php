@@ -63,23 +63,6 @@
             $('#modal-form').validator().on('submit', function (e){
                 if(! e.preventDefault()){
                     $.post($('#modal-form form').attr('action'), $('#modal-form form').serialize())
-=======
-                 url: '{{ route('kategori.data') }}',
-                 },
-                 columns: [
-                    {data: 'DT_RowIndex', searchable: false, sortable: false},
-                    {data: 'nama_kategori'},
-                    {data: 'aksi', searchable: false, sortable:false},
-                 ]
-            });
-            $('#modal-form').validator().on('submit', function (e){
-                if(! e.preventDefault()){
-                    $.ajax({
-                        url: $('#modal-form form').attr('action'),
-                        type: 'post',
-                        data: $('#modal-form form').serialize()
-                    })
->>>>>>> 716ba28dab9921f603509009bb3e50ac8e4584d2
                     .done((response) => {
                         $('#modal-form').modal('hide');
                         table.ajax.reload();
